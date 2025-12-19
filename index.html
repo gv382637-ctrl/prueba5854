@@ -1,0 +1,311 @@
+
+
+2 de 14,656
+(sin asunto)
+Recibidos
+
+Gustavo Villanueva
+Archivos adjuntos
+5:36 p.m. (hace 1 hora)
+para mí
+
+ 
+
+ 6 archivos adjuntos
+  •  Analizado por Gmail
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiniela La Perrona</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+:root {
+  --yellow:#ffd700; 
+  --dark:#2b2b2b; 
+  --red:#b30000;
+  --whatsapp-green: #25D366;
+  --whatsapp-dark: #128C7E;
+}
+body {
+  background:#000; 
+  font-family:Arial, sans-serif; 
+  color:#fff;
+  display:flex; 
+  justify-content:center; 
+  padding:20px;
+}
+.wrapper {
+  width:420px; 
+  background:var(--dark);
+  border:3px solid var(--yellow); 
+  border-radius:10px; 
+  padding:20px;
+}
+.title {
+  background:var(--red); 
+  border:2px solid var(--yellow);
+  text-align:center; 
+  font-size:20px; 
+  font-weight:bold;
+  padding:10px; 
+  margin-bottom:20px;
+}
+.field {
+  display:grid; 
+  grid-template-columns:150px 1fr; 
+  margin-bottom:10px;
+}
+.field input {
+  background:transparent; 
+  border:2px solid var(--yellow);
+  color:#fff; 
+  padding:6px; 
+  border-radius:4px;
+}
+
+/* TABLA */
+.table { 
+  border:3px solid var(--yellow); 
+  margin-top:20px; 
+}
+.header,.row {
+  display:grid; 
+  grid-template-columns:32px 1fr 32px 1fr 32px;
+}
+.cell {
+  padding:10px 6px; 
+  border-right:2px solid var(--yellow);
+  border-bottom:2px solid var(--yellow);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header .cell {
+  justify-content:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.cell.radio {
+  justify-content:center;
+}
+.cell.radio input[type="radio"] {
+  transform: scale(1.5);
+  cursor:pointer;
+}
+
+/* BOTONES */
+.submit {
+  margin-top:20px; 
+  background:var(--yellow); 
+  color:#000;
+  padding:15px; 
+  text-align:center; 
+  font-weight:bold;
+  cursor:pointer; 
+  border-radius:6px;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  background: #e6c200;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+  margin-top:20px;
+  background: linear-gradient(135deg, var(--whatsapp-green), var(--whatsapp-dark));
+  color: white !important;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.hidden { display:none; }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<form id="quinielaForm">
+  <div class="title">QUINIELA LA PERRONA</div>
+
+  <div class="field"><label>Nombre</label><input name="nombre" required></div>
+  <div class="field"><label>Teléfono</label><input name="telefono" required></div>
+  <div class="field"><label>Código</label><input name="codigo" required></div>
+
+  <div class="table">
+    <div class="header">
+      <div class="cell">L</div>
+      <div class="cell">LOCAL</div>
+      <div class="cell">E</div>
+      <div class="cell">VISITANTE</div>
+      <div class="cell">V</div>
+    </div>
+
+    <div class="row" data-local="BRASIL" data-visitante="ARGENTINA">
+      <div class="cell radio"><input type="radio" name="p1" value="L" required></div>
+      <div class="cell">BRASIL</div>
+      <div class="cell radio"><input type="radio" name="p1" value="E"></div>
+      <div class="cell">ARGENTINA</div>
+      <div class="cell radio"><input type="radio" name="p1" value="V"></div>
+    </div>
+
+    <div class="row" data-local="ESPAÑA" data-visitante="ITALIA">
+      <div class="cell radio"><input type="radio" name="p2" value="L" required></div>
+      <div class="cell">ESPAÑA</div>
+      <div class="cell radio"><input type="radio" name="p2" value="E"></div>
+      <div class="cell">ITALIA</div>
+      <div class="cell radio"><input type="radio" name="p2" value="V"></div>
+    </div>
+
+    <div class="row" data-local="COLOMBIA" data-visitante="ALEMANIA">
+      <div class="cell radio"><input type="radio" name="p3" value="L" required></div>
+      <div class="cell">COLOMBIA</div>
+      <div class="cell radio"><input type="radio" name="p3" value="E"></div>
+      <div class="cell">ALEMANIA</div>
+      <div class="cell radio"><input type="radio" name="p3" value="V"></div>
+    </div>
+
+    <div class="row" data-local="CHILE" data-visitante="INGLATERRA">
+      <div class="cell radio"><input type="radio" name="p4" value="L" required></div>
+      <div class="cell">CHILE</div>
+      <div class="cell radio"><input type="radio" name="p4" value="E"></div>
+      <div class="cell">INGLATERRA</div>
+      <div class="cell radio"><input type="radio" name="p4" value="V"></div>
+    </div>
+
+    <div class="row" data-local="MEXICO" data-visitante="FRANCIA">
+      <div class="cell radio"><input type="radio" name="p5" value="L" required></div>
+      <div class="cell">MEXICO</div>
+      <div class="cell radio"><input type="radio" name="p5" value="E"></div>
+      <div class="cell">FRANCIA</div>
+      <div class="cell radio"><input type="radio" name="p5" value="V"></div>
+    </div>
+
+    <div class="row" data-local="PORTUGAL" data-visitante="POLONIA">
+      <div class="cell radio"><input type="radio" name="p6" value="L" required></div>
+      <div class="cell">PORTUGAL</div>
+      <div class="cell radio"><input type="radio" name="p6" value="E"></div>
+      <div class="cell">POLONIA</div>
+      <div class="cell radio"><input type="radio" name="p6" value="V"></div>
+    </div>
+
+    <div class="row" data-local="COREA" data-visitante="JAPON">
+      <div class="cell radio"><input type="radio" name="p7" value="L" required></div>
+      <div class="cell">COREA</div>
+      <div class="cell radio"><input type="radio" name="p7" value="E"></div>
+      <div class="cell">JAPON</div>
+      <div class="cell radio"><input type="radio" name="p7" value="V"></div>
+    </div>
+
+    <div class="row" data-local="VENEZUELA" data-visitante="SUIZA">
+      <div class="cell radio"><input type="radio" name="p8" value="L" required></div>
+      <div class="cell">VENEZUELA</div>
+      <div class="cell radio"><input type="radio" name="p8" value="E"></div>
+      <div class="cell">SUIZA</div>
+      <div class="cell radio"><input type="radio" name="p8" value="V"></div>
+    </div>
+
+    <div class="row" data-local="URUGUAY" data-visitante="RUSIA">
+      <div class="cell radio"><input type="radio" name="p9" value="L" required></div>
+      <div class="cell">URUGUAY</div>
+      <div class="cell radio"><input type="radio" name="p9" value="E"></div>
+      <div class="cell">RUSIA</div>
+      <div class="cell radio"><input type="radio" name="p9" value="V"></div>
+    </div>
+
+  </div>
+
+  <div class="submit" onclick="guardar()">GUARDAR RESPUESTAS</div>
+</form>
+
+<div id="final" class="hidden">
+  <div class="title">🍀 ¡MUCHA SUERTE! 🍀</div>
+  <p style="text-align:center; margin-bottom: 25px;">Tus respuestas fueron guardadas correctamente.</p>
+  
+  <div class="btn-whatsapp" onclick="enviarWhats()">
+    <i class="fab fa-whatsapp"></i>
+    ENVIAR RESPUESTAS POR WHATSAPP
+  </div>
+</div>
+
+</div>
+
+<script>
+let mensajeWhats = "";
+
+function guardar() {
+  const form = document.getElementById("quinielaForm");
+  if (!form.checkValidity()) return alert("Por favor, selecciona un resultado para cada partido y completa tus datos.");
+
+  let data = {
+    nombre: form.nombre.value,
+    telefono: form.telefono.value,
+    codigo: form.codigo.value
+  };
+
+  mensajeWhats = `🏆 *QUINIELA LA PERRONA*\n\n`;
+  mensajeWhats += `👤 *Nombre:* ${data.nombre}\n📞 *Tel:* ${data.telefono}\n🔐 *Código:* ${data.codigo}\n\n`;
+  mensajeWhats += `*PRONÓSTICOS:*\n`;
+
+  document.querySelectorAll(".row").forEach((r,i)=>{
+    const local=r.dataset.local, vis=r.dataset.visitante;
+    const sel=r.querySelector("input:checked").value;
+    const res = sel==="L"?local:sel==="E"?"Empate":vis;
+    data["h"+(i+1)] = `${local} VS ${vis}`;
+    data["p"+(i+1)] = res;
+    mensajeWhats += `⚽ ${local} vs ${vis} -> *${res}*\n`;
+  });
+
+  // Mostrar aviso de carga
+  const btnSubmit = document.querySelector(".submit");
+  btnSubmit.innerText = "GUARDANDO...";
+  btnSubmit.style.pointerEvents = "none";
+
+  fetch("https://script.google.com/macros/s/AKfycbz4Ox0tHa0XACHkhy6JkyGY-k9lD69EChUGTkRouULzHFRmNhZbX4VT3CEl1b-V4pGjHw/exec",{
+    method:"POST",
+    mode: "no-cors", // Agregado para evitar problemas de CORS comunes en Apps Script
+    body:JSON.stringify(data)
+  }).then(()=>{
+    form.classList.add("hidden");
+    document.getElementById("final").classList.remove("hidden");
+  }).catch(()=>{
+    alert("Error al guardar. Intenta de nuevo.");
+    btnSubmit.innerText = "GUARDAR RESPUESTAS";
+    btnSubmit.style.pointerEvents = "auto";
+  });
+}
+
+function enviarWhats(){
+  const tel="5214423774943";
+  window.open(`https://wa.me/${tel}?text=${encodeURIComponent(mensajeWhats)}`,"_blank");
+}
+</script>
+
+</body>
+</html>G
